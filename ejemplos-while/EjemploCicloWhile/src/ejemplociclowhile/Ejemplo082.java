@@ -44,13 +44,11 @@ public class Ejemplo082 {
 
             switch (temporal) {
                 case "si":
-                    bandera = false;
                 case "yes":
-                    bandera = false;
                 case "s":
-                    bandera = false;
                 case "y":
                     bandera = false;
+                    break;
             }
         }
         promedio_final = suma_total / contador;
