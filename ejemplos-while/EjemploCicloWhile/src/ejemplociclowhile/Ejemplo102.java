@@ -52,9 +52,7 @@ public class Ejemplo102 {
         entrada.useLocale(Locale.US);
         int limite_tabla;
         int contador = 1;
-        int operacion1;
-        int operacion2;
-        int operacion3;
+        int operacion;
         int tabla;
         
         System.out.println("Ingrese el número de tabla a generar");
@@ -70,29 +68,31 @@ public class Ejemplo102 {
         resta = String.format("%sTabla de resta\n", resta);
         multiplicacion = String.format("%sTabla de multiplicar\n", multiplicacion);
         while (contador <= limite_tabla){
-            operacion1 = tabla + contador;
-            operacion2 = tabla - contador;
-            operacion3 = tabla * contador;
+            operacion = tabla + contador;
+            
             suma = String.format("%s%d+%d=%d\n", 
                     suma, 
                     tabla, 
                     contador,
-                    operacion1);
+                    operacion);
+            
+            operacion = tabla - contador;
             resta = String.format("%s%d-%d=%d\n", 
                     resta, 
                     tabla, 
                     contador,
-                    operacion2);
+                    operacion);
+            
+            operacion = tabla * contador;
             multiplicacion = String.format("%s%d*%d=%d\n", 
                     multiplicacion, 
                     tabla, 
                     contador,
-                    operacion3);
+                    operacion);
             contador = contador + 1;
-            
         }
         cadena = String.format("%s%s\n%s\n%s\n",cadena,suma,resta,multiplicacion);
-        System.out.printf("%s\n", cadena);
+        System.out.printf("%s", cadena);
         
     }
 }
