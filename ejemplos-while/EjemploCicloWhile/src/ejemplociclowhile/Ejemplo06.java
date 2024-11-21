@@ -30,8 +30,8 @@ public class Ejemplo06 {
         System.out.println("Ingrese las notas de los "
                 + "estudiantes de su materia");
         // true 
-        // while (bandera) {
-        while(bandera==true){
+        // while (bandera) { 
+        while(bandera==true){   // SON LO MISMO PQ AHI NOS PIDE DIRECTAMENTE EL VALOR BOOLEANO QUE TIENE BANDERA
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
